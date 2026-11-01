@@ -7,8 +7,6 @@ import 'firebase_options.dart';
 void main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
-  final result = await MinistryConnector.instance.getChurches().execute();
-
   runApp(const MyApp());
 }
 

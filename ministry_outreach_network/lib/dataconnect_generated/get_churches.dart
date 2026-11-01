@@ -27,6 +27,8 @@ class GetChurchesChurches {
   final bool health;
   final String worshiptime;
   final bool livestream;
+  final List<String> tags;
+  final EnumValue<District> disctrict;
   GetChurchesChurches.fromJson(dynamic json):
   
   id = nativeFromJson<int>(json['id']),
@@ -37,7 +39,11 @@ class GetChurchesChurches {
   stability = nativeFromJson<bool>(json['stability']),
   health = nativeFromJson<bool>(json['health']),
   worshiptime = nativeFromJson<String>(json['worshiptime']),
-  livestream = nativeFromJson<bool>(json['livestream']);
+  livestream = nativeFromJson<bool>(json['livestream']),
+  tags = (json['tags'] as List<dynamic>)
+        .map((e) => nativeFromJson<String>(e))
+        .toList(),
+  disctrict = districtDeserializer(json['disctrict']);
   @override
   bool operator ==(Object other) {
     if(identical(this, other)) {
@@ -56,11 +62,13 @@ class GetChurchesChurches {
     stability == otherTyped.stability && 
     health == otherTyped.health && 
     worshiptime == otherTyped.worshiptime && 
-    livestream == otherTyped.livestream;
+    livestream == otherTyped.livestream && 
+    tags == otherTyped.tags && 
+    disctrict == otherTyped.disctrict;
     
   }
   @override
-  int get hashCode => Object.hashAll([id.hashCode, name.hashCode, address.hashCode, hunger.hashCode, literacy.hashCode, stability.hashCode, health.hashCode, worshiptime.hashCode, livestream.hashCode]);
+  int get hashCode => Object.hashAll([id.hashCode, name.hashCode, address.hashCode, hunger.hashCode, literacy.hashCode, stability.hashCode, health.hashCode, worshiptime.hashCode, livestream.hashCode, tags.hashCode, disctrict.hashCode]);
   
 
   Map<String, dynamic> toJson() {
@@ -74,6 +82,10 @@ class GetChurchesChurches {
     json['health'] = nativeToJson<bool>(health);
     json['worshiptime'] = nativeToJson<String>(worshiptime);
     json['livestream'] = nativeToJson<bool>(livestream);
+    json['tags'] = tags.map((e) => nativeToJson<String>(e)).toList();
+    json['disctrict'] = 
+    districtSerializer(disctrict)
+    ;
     return json;
   }
 
@@ -87,6 +99,8 @@ class GetChurchesChurches {
     required this.health,
     required this.worshiptime,
     required this.livestream,
+    required this.tags,
+    required this.disctrict,
   });
 }
 
