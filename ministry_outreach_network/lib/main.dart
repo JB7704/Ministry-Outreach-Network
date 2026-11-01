@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Ministry Outreach Network',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -28,9 +28,20 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: const ColorScheme(
+        brightness: Brightness.light,
+        primary: Color(0xFFE4002B),       // Your main color
+        onPrimary: Color(0xFFFFFFFF),     // Text/icons on primary
+        secondary: Color(0xFF319966),     // Your green color
+        onSecondary: Color(0xFFFFFFFF),   
+        surface: Color(0xFFFFFFFF),       // Your white color
+        onSurface: Color(0xFF231F20),     // Your black color (for text)
+        error: Color(0xFFE4002B),
+        onError: Color(0xFFFFFFFF),
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+        cardColor: const Color(0xFFCCCCCC),
+      ),
+      home: const MyHomePage(title: 'Ministry Outreach Network'),
     );
   }
 }
@@ -54,19 +65,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
-      _counter++;
-    });
-  }
-
+  List<String>  Churches = ['United', 'Methodist', 'Arkansas'];
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -104,18 +103,39 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const Text('You have pushed the button this many times:'),
-            Text(
-              '$_counter',
-              style: Theme.of(context).textTheme.headlineMedium,
+          Padding(
+            padding: const EdgeInsets.symmetric(vertical: 8.0),
+            child: Text(
+              'Number of Churches ${Churches.length}',    //ADD NUMBER OF CHURCHES RETURNED
+              style: const TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.bold,
+              ),
             ),
+            ),
+          Expanded(
+            child: ListView(
+              children: Churches.map((item) {
+                return ChurchesWidget(item);
+              }).toList(),
+           ),
+          ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+    );
+  }
+}
+class ChurchesWidget extends StatelessWidget {
+  final String church;
+
+  const ChurchesWidget(this.church);
+
+  @override
+  Widget build(BuildContext context) {
+    return Card(
+      child: ListTile(
+        title: Text(church),
       ),
     );
   }
