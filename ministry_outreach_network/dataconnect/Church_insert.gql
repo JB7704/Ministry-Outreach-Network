@@ -1,5 +1,7 @@
 # This is a file for you to write an un-named mutation. 
 # Only one un-named mutation is allowed per file.
 mutation {
-  church_insert(data: {id: 0, address: "", name: ""})
+  church_insert(
+    data: {id: 0, address: "", health: false, hunger: false, literacy: false, livestream: false, name: "", stability: false, worshiptime: ""}
+  )
 }

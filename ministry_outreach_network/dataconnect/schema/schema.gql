@@ -6,6 +6,6 @@ type Church @table(key: ["id"]) {
   literacy: Boolean!
   stability: Boolean!
   health: Boolean!
-  worship_time: String
-  live_stream: Boolean
+  worshiptime: String!
+  livestream: Boolean!
 }

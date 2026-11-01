@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:ministry_outreach_network/dataconnect_generated/generated.dart';
 
-void main() {
+import 'firebase_options.dart';
+
+void main() async {
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+
+  final result = await MinistryConnector.instance.getChurches().execute();
+
   runApp(const MyApp());
 }
 
