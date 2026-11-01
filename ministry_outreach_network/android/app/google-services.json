@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "890055766452",
+    "project_id": "ministry-outreach-network",
+    "storage_bucket": "ministry-outreach-network.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:890055766452:android:a78f75e8356972661c02e1",
+        "android_client_info": {
+          "package_name": "com.example.ministry_outreach_network"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAcMZsl7ukOAA10-HOE0LoT2Ha_Pa7gKMo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

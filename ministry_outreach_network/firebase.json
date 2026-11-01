@@ -1,0 +1,39 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "ministry-outreach-network",
+          "appId": "1:890055766452:android:a78f75e8356972661c02e1",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "ios": {
+        "default": {
+          "projectId": "ministry-outreach-network",
+          "appId": "1:890055766452:ios:244429c07f0c480a1c02e1",
+          "uploadDebugSymbols": false,
+          "fileOutput": "ios/Runner/GoogleService-Info.plist"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "ministry-outreach-network",
+          "configurations": {
+            "android": "1:890055766452:android:a78f75e8356972661c02e1",
+            "ios": "1:890055766452:ios:244429c07f0c480a1c02e1",
+            "web": "1:890055766452:web:280e42509c54f88d1c02e1"
+          }
+        }
+      }
+    }
+  },
+  "emulators": {
+    "dataconnect": {
+      "dataDir": "dataconnect/.dataconnect/pgliteData"
+    }
+  },
+  "dataconnect": {
+    "source": "dataconnect"
+  }
+}

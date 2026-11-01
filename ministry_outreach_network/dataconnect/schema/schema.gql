@@ -1,0 +1,11 @@
+type Church @table(key: ["id"]) {
+  id: Int!
+  name: String!
+  address: String!
+  hunger: Boolean!
+  literacy: Boolean!
+  stability: Boolean!
+  health: Boolean!
+  worship_time: String
+  live_stream: Boolean
+}

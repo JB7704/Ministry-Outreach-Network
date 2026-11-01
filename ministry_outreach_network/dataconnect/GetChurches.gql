@@ -1,0 +1,7 @@
+query GetChurches @auth(level: PUBLIC) {
+  churches {
+    id
+    name
+    address
+  }
+}
