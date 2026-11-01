@@ -30,12 +30,12 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: const ColorScheme(
         brightness: Brightness.light,
-        primary: Color(0xFFE4002B),       // Your main color
+        primary: Color(0xFFE4002B),       // main color
         onPrimary: Color(0xFFFFFFFF),     // Text/icons on primary
-        secondary: Color(0xFF319966),     // Your green color
+        secondary: Color(0xFF319966),     //  green color
         onSecondary: Color(0xFFFFFFFF),   
-        surface: Color(0xFFFFFFFF),       // Your white color
-        onSurface: Color(0xFF231F20),     // Your black color (for text)
+        surface: Color(0xFFFFFFFF),       //  white color
+        onSurface: Color(0xFF231F20),     //  black color (for text)
         error: Color(0xFFE4002B),
         onError: Color(0xFFFFFFFF),
       ),
@@ -65,7 +65,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  List<String>  Churches = ['United', 'Methodist', 'Arkansas'];
+  List<String>  churches = ['United', 'Methodist', 'Arkansas'];
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 8.0),
             child: Text(
-              'Number of Churches ${Churches.length}',    //ADD NUMBER OF CHURCHES RETURNED
+              'Number of Churches ${churches.length}',    //ADD NUMBER OF CHURCHES RETURNED
               style: const TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
@@ -115,8 +115,8 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
           Expanded(
             child: ListView(
-              children: Churches.map((item) {
-                return ChurchesWidget(item);
+              children: churches.map((item) {
+                return churchesWidget(item);
               }).toList(),
            ),
           ),
@@ -126,10 +126,10 @@ class _MyHomePageState extends State<MyHomePage> {
     );
   }
 }
-class ChurchesWidget extends StatelessWidget {
+class churchesWidget extends StatelessWidget {
   final String church;
 
-  const ChurchesWidget(this.church);
+  const churchesWidget(this.church);
 
   @override
   Widget build(BuildContext context) {
