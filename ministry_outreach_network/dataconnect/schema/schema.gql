@@ -1,3 +1,10 @@
+enum District {
+  Central,
+  NorthEast,
+  NorthWest,
+  South
+}
+
 type Church @table(key: ["id"]) {
   id: Int!
   name: String!
@@ -8,4 +15,6 @@ type Church @table(key: ["id"]) {
   health: Boolean!
   worshiptime: String!
   livestream: Boolean!
+  tags: [String!]!
+  disctrict: District!
 }

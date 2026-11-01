@@ -9,5 +9,39 @@ query GetChurches @auth(level: PUBLIC) {
         health
         worshiptime
         livestream
+        tags
+        disctrict
+    }
+}
+
+query GetChurch($id: Int!) @auth(level: PUBLIC) {
+    churches(where: { id: { eq: $id }}) {
+        id
+        name
+        address
+        hunger
+        literacy
+        stability
+        health
+        worshiptime
+        livestream
+        tags
+        disctrict
+    }
+}
+
+query GetChurchesWithTags($tags: [String!]!) @auth(level: PUBLIC) {
+    churches(where: { tags: { includesAll: $tags }}) {
+        id
+        name
+        address
+        hunger
+        literacy
+        stability
+        health
+        worshiptime
+        livestream
+        tags
+        disctrict
     }
 }

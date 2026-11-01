@@ -2,6 +2,6 @@
 # Only one un-named mutation is allowed per file.
 mutation {
   church_insert(
-    data: {id: 0, address: "", health: false, hunger: false, literacy: false, livestream: false, name: "", stability: false, worshiptime: ""}
+    data: {id: 0, address: "", health: false, hunger: false, literacy: false, livestream: false, name: "", stability: false, tags: [""], worshiptime: ""}
   )
 }
