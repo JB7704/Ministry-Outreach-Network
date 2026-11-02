@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ministry_outreach_network/widgets/church_widget.dart';
 import 'package:ministry_outreach_network/screens/tag_screen.dart';
 import 'package:ministry_outreach_network/screens/search_screen.dart';
+import 'package:ministry_outreach_network/screens/church_screen.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -93,9 +94,44 @@ class _HomeScreen extends State<HomeScreen> {
             ),
             Expanded(
               child: ListView(
-                children: churches.map((item) {
-                  return ChurchWidget(item);
-                }).toList(),
+                children: <Widget>[
+                  Card(
+                    child: ListTile(
+                      title: Text('Example Church 1'),
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute<void>(
+                          builder: (BuildContext context) {
+                            return ChurchScreen();
+                          },
+                        ));
+                      },
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      title: Text('Example Church 2'),
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute<void>(
+                          builder: (BuildContext context) {
+                            return ChurchScreen();
+                          },
+                        ));
+                      },
+                    ),
+                  ),
+                  Card(
+                    child: ListTile(
+                      title: Text('Example Church 3'),
+                      onTap: () {
+                        Navigator.push(context, MaterialPageRoute<void>(
+                          builder: (BuildContext context) {
+                            return ChurchScreen();
+                          },
+                        ));
+                      },
+                    ),
+                  ),
+                ],
               ),
             ),
           ],

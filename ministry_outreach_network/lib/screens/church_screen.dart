@@ -6,7 +6,15 @@ class ChurchScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Church Screen')),
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
+        title: const Text('Church Screen'),
+      ),
       body: Column(
         children: <Widget>[
           Text('Church Id here'),
