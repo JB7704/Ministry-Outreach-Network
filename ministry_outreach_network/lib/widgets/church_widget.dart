@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class ChurchWidget extends StatelessWidget {
   final String church;
@@ -9,7 +10,7 @@ class ChurchWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       child: ListTile(
-        title: Text(church),
+        title: Text(church, style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black) ),
       ),
     );
   }

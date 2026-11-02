@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:ministry_outreach_network/widgets/church_widget.dart';
 import 'package:ministry_outreach_network/screens/tag_screen.dart';
 import 'package:ministry_outreach_network/screens/search_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 
 class HomeScreen extends StatefulWidget {
@@ -23,7 +24,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreen extends State<HomeScreen> {
-  List<String>  churches = ['United', 'Methodist', 'Arkansas'];
+  List<String> churches = [
+  'United', 
+  'Methodist',
+  'Arkansas',
+  ];
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -65,12 +70,8 @@ class _HomeScreen extends State<HomeScreen> {
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
                 'Number of Churches ${churches.length}',    //ADD NUMBER OF CHURCHES RETURNED
-                style: const TextStyle(
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
+                style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black) )
               ),
-            ),
             ElevatedButton(
               onPressed: () {
                 Navigator.push(context, MaterialPageRoute<void>(
@@ -79,7 +80,7 @@ class _HomeScreen extends State<HomeScreen> {
                   },
                 ));
               },
-              child: const Text('Filter by Criteria'),
+              child: Text('Filter by Criteria', style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black) ),
             ),
             ElevatedButton(
               onPressed: () {
@@ -89,7 +90,7 @@ class _HomeScreen extends State<HomeScreen> {
                   },
                 ));
               },
-              child: const Text('Search by Name'),
+              child: Text('Search by Name',style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black)  ),
             ),
             Expanded(
               child: ListView(
