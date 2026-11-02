@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 enum MinistryFilter { Hunger, Literacy, Stability, Health}
 
@@ -9,7 +10,7 @@ class TagScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(title: const Text('FilterChip Sample')),
+        appBar: AppBar(title: Text('FilterChip Sample', style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black) )),
         body: const FilterChipExample(),
       ),
     );
@@ -34,7 +35,7 @@ class _FilterChipExampleState extends State<FilterChipExample> {
       child: Column(
         mainAxisAlignment: .center,
         children: <Widget>[
-          Text('Choose a ministry', style: textTheme.labelLarge),
+          Text('Choose a ministry', style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black) ),
           const SizedBox(height: 5.0),
           Wrap(
             spacing: 5.0,
@@ -57,7 +58,7 @@ class _FilterChipExampleState extends State<FilterChipExample> {
           const SizedBox(height: 10.0),
           Text(
             'Looking for: ${filters.map((MinistryFilter m) => m.name).join(', ')}',
-            style: textTheme.labelLarge,
+            style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black) ,
           ),
         ],
       ),

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:ministry_outreach_network/screens/tag_screen.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
@@ -44,8 +45,8 @@ class _SearchScreen extends State<SearchScreen> {
           ),
           Center(
             child: controller.text.isEmpty
-                ? const Text('No item selected')
-                : Text('Selected item: ${controller.value.text}'),
+                ?  Text('No item selected', style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black))
+                : Text('Selected item: ${controller.value.text}', style: GoogleFonts.montserrat(fontSize: 24, fontWeight: FontWeight.bold, color: Colors.black)),
           ),
         ],
       ),
