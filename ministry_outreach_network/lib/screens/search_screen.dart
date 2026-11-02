@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:ministry_outreach_network/screens/tag_screen.dart';
 
-class SearchScreen extends StatelefulWidget {
+class SearchScreen extends StatefulWidget {
   const SearchScreen({super.key});
 
   @override
@@ -8,6 +9,9 @@ class SearchScreen extends StatelefulWidget {
 }
 
 class _SearchScreen extends State<SearchScreen> {
+
+  final SearchController controller = SearchController();
+
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Search')),
@@ -26,7 +30,7 @@ class _SearchScreen extends State<SearchScreen> {
             suggestionsBuilder:
                 (BuildContext context, SearchController controller) {
                   return List<ListTile>.generate(5, (int index) {
-                    final String item = item $index ;
+                    final String item = 'item $index';
                     return ListTile(
                       title: Text(item),
                       onTap: () {
@@ -45,6 +49,6 @@ class _SearchScreen extends State<SearchScreen> {
           ),
         ],
       ),
-    ),
+    );
   }
 }

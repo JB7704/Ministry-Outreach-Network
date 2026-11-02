@@ -15,20 +15,11 @@ let package = Package(
         .library(name: "FlutterGeneratedPluginSwiftPackage", type: .static, targets: ["FlutterGeneratedPluginSwiftPackage"])
     ],
     dependencies: [
-        .package(name: "firebase_app_check", path: "../.packages/firebase_app_check-0.5.1"),
-        .package(name: "firebase_auth", path: "../.packages/firebase_auth-7.0.1"),
-        .package(name: "firebase_core", path: "../.packages/firebase_core-5.1.0"),
-        .package(name: "FlutterFramework", path: "../.packages/FlutterFramework")
+        
     ],
     targets: [
         .target(
-            name: "FlutterGeneratedPluginSwiftPackage",
-            dependencies: [
-                .product(name: "firebase-app-check", package: "firebase_app_check"),
-                .product(name: "firebase-auth", package: "firebase_auth"),
-                .product(name: "firebase-core", package: "firebase_core"),
-                .product(name: "FlutterFramework", package: "FlutterFramework")
-            ]
+            name: "FlutterGeneratedPluginSwiftPackage"
         )
     ]
 )

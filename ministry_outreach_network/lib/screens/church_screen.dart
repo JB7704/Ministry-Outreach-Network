@@ -8,18 +8,18 @@ class ChurchScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(title: const Text('Church Screen')),
       body: Column(
-        children[
-          const Text('Church Id here'),
-          const Text('Church Name here'),
-          const Text('Church Address here'),
-          const Text('Church Hunger here'),
-          const Text('Church Literacy here'),
-          const Text('Church Stability here'),
-          const Text('Church Health here'),
-          const Text('Church Worship Time here'),
-          const Text('Church Livestream here'),
+        children: <Widget>[
+          Text('Church Id here'),
+          Text('Church Name here'),
+          Text('Church Address here'),
+          Text('Church Hunger here'),
+          Text('Church Literacy here'),
+          Text('Church Stability here'),
+          Text('Church Health here'),
+          Text('Church Worship Time here'),
+          Text('Church Livestream here'),
         ],
       ),
-    )
+    );
   }
 }
