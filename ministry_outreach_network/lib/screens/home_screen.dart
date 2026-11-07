@@ -4,7 +4,6 @@ import 'package:ministry_outreach_network/screens/tag_screen.dart';
 import 'package:ministry_outreach_network/screens/search_screen.dart';
 import 'package:ministry_outreach_network/screens/church_screen.dart';
 
-
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
 
@@ -24,7 +23,7 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreen extends State<HomeScreen> {
-  List<String>  churches = ['United', 'Methodist', 'Arkansas'];
+  List<String> churches = ['United', 'Methodist', 'Arkansas'];
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -38,10 +37,15 @@ class _HomeScreen extends State<HomeScreen> {
         // TRY THIS: Try changing the color here to a specific color (to
         // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
         // change color while the other colors stay the same.
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        centerTitle: true,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         // title: Text(widget.title),
+        title: Image.asset(
+          "assets/images/white_banner.jpeg",
+          width: 256,
+          height: 256,
+        ),
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
@@ -65,7 +69,7 @@ class _HomeScreen extends State<HomeScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
-                'Number of Churches ${churches.length}',    //ADD NUMBER OF CHURCHES RETURNED
+                'Number of Churches ${churches.length}', //ADD NUMBER OF CHURCHES RETURNED
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -74,21 +78,27 @@ class _HomeScreen extends State<HomeScreen> {
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute<void>(
-                  builder: (BuildContext context) {
-                    return TagScreen();
-                  },
-                ));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) {
+                      return TagScreen();
+                    },
+                  ),
+                );
               },
               child: const Text('Filter by Criteria'),
             ),
             ElevatedButton(
               onPressed: () {
-                Navigator.push(context, MaterialPageRoute<void>(
-                  builder: (BuildContext context) {
-                    return SearchScreen();
-                  },
-                ));
+                Navigator.push(
+                  context,
+                  MaterialPageRoute<void>(
+                    builder: (BuildContext context) {
+                      return SearchScreen();
+                    },
+                  ),
+                );
               },
               child: const Text('Search by Name'),
             ),
@@ -99,11 +109,14 @@ class _HomeScreen extends State<HomeScreen> {
                     child: ListTile(
                       title: Text('Example Church 1'),
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute<void>(
-                          builder: (BuildContext context) {
-                            return ChurchScreen();
-                          },
-                        ));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (BuildContext context) {
+                              return ChurchScreen();
+                            },
+                          ),
+                        );
                       },
                     ),
                   ),
@@ -111,11 +124,14 @@ class _HomeScreen extends State<HomeScreen> {
                     child: ListTile(
                       title: Text('Example Church 2'),
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute<void>(
-                          builder: (BuildContext context) {
-                            return ChurchScreen();
-                          },
-                        ));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (BuildContext context) {
+                              return ChurchScreen();
+                            },
+                          ),
+                        );
                       },
                     ),
                   ),
@@ -123,11 +139,14 @@ class _HomeScreen extends State<HomeScreen> {
                     child: ListTile(
                       title: Text('Example Church 3'),
                       onTap: () {
-                        Navigator.push(context, MaterialPageRoute<void>(
-                          builder: (BuildContext context) {
-                            return ChurchScreen();
-                          },
-                        ));
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute<void>(
+                            builder: (BuildContext context) {
+                              return ChurchScreen();
+                            },
+                          ),
+                        );
                       },
                     ),
                   ),
@@ -140,4 +159,3 @@ class _HomeScreen extends State<HomeScreen> {
     );
   }
 }
-
