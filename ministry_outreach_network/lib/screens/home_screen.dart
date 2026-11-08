@@ -24,6 +24,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreen extends State<HomeScreen> {
   List<String> churches = ['United', 'Methodist', 'Arkansas'];
+  final SearchController controller = SearchController();
   @override
   Widget build(BuildContext context) {
     // This method is rerun every time setState is called, for instance as done
@@ -76,32 +77,69 @@ class _HomeScreen extends State<HomeScreen> {
                 ),
               ),
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute<void>(
-                    builder: (BuildContext context) {
-                      return TagScreen();
-                    },
-                  ),
-                );
-              },
-              child: const Text('Filter by Criteria'),
+            Row(
+              children: [
+                SearchAnchor(
+                  searchController: controller,
+                  builder: (BuildContext context, SearchController controller) {
+                    return IconButton(
+                      icon: const Icon(Icons.search),
+                      onPressed: () {
+                        controller.openView();
+                      },
+                    );
+                  },
+                  suggestionsBuilder:
+                      (BuildContext context, SearchController controller) {
+                        return List<ListTile>.generate(5, (int index) {
+                          final String item = 'item $index';
+                          return ListTile(
+                            title: Text(item),
+                            onTap: () {
+                              setState(() {
+                                controller.closeView(item);
+                              });
+                            },
+                          );
+                        });
+                      },
+                ),
+                Center(
+                  child: controller.text.isEmpty
+                      ? const Text('No item selected')
+                      : Text('Selected item: ${controller.value.text}'),
+                ),
+                Spacer(),
+                ElevatedButton(
+                  onPressed: () {
+                    showDialog(
+                      context: context,
+                      useSafeArea: true,
+                      builder: (context) {
+                        TagScreen tagScreen = TagScreen();
+
+                        final screenSize = MediaQuery.of(context).size;
+                        final dialogSize = (
+                          screenSize.width * 0.85,
+                          screenSize.height * 0.85,
+                        );
+
+                        return Dialog(
+                          // Prevents the background alert container from expanding infinitely
+                          child: SizedBox(
+                            width: screenSize.width,
+                            height: screenSize.height,
+                            child: tagScreen,
+                          ),
+                        );
+                      }
+                    );
+                  },
+                  child: const Text('Filter by Criteria'),
+                ),
+              ]
             ),
-            ElevatedButton(
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute<void>(
-                    builder: (BuildContext context) {
-                      return SearchScreen();
-                    },
-                  ),
-                );
-              },
-              child: const Text('Search by Name'),
-            ),
+            
             Expanded(
               child: ListView(
                 children: <Widget>[
