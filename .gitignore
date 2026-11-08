@@ -2,3 +2,195 @@
 ministry_outreach_network/android/local.properties
 
 ministry_outreach_network/.flutter-plugins-dependencies
+ministry_outreach_network/.dart_tool/version
+ministry_outreach_network/.dart_tool/chrome-device/Default/Affiliation Database
+ministry_outreach_network/.dart_tool/chrome-device/Default/Affiliation Database-journal
+ministry_outreach_network/.dart_tool/version
+ministry_outreach_network/.dart_tool/chrome-device/Default/BookmarkMergedSurfaceOrdering
+ministry_outreach_network/.dart_tool/chrome-device/Default/Cookies
+ministry_outreach_network/.dart_tool/chrome-device/Default/Cookies-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/declarative_performance_observer.db
+ministry_outreach_network/.dart_tool/chrome-device/Default/declarative_performance_observer.db-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Device Bound Sessions
+ministry_outreach_network/.dart_tool/chrome-device/Default/Device Bound Sessions-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/DIPS
+ministry_outreach_network/.dart_tool/chrome-device/Default/Favicons
+ministry_outreach_network/.dart_tool/chrome-device/Default/Favicons-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/heavy_ad_intervention_opt_out.db
+ministry_outreach_network/.dart_tool/chrome-device/Default/heavy_ad_intervention_opt_out.db-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/History
+ministry_outreach_network/.dart_tool/chrome-device/Default/History-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Login Data
+ministry_outreach_network/.dart_tool/chrome-device/Default/Login Data For Account
+ministry_outreach_network/.dart_tool/chrome-device/Default/Login Data For Account-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Login Data-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Network Action Predictor
+ministry_outreach_network/.dart_tool/chrome-device/Default/Network Action Predictor-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Network Persistent State
+ministry_outreach_network/.dart_tool/chrome-device/Default/Preferences
+ministry_outreach_network/.dart_tool/chrome-device/Default/PreferredApps
+ministry_outreach_network/.dart_tool/chrome-device/Default/Reporting and NEL
+ministry_outreach_network/.dart_tool/chrome-device/Default/Reporting and NEL-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Secure Preferences
+ministry_outreach_network/.dart_tool/chrome-device/Default/ServerCertificate
+ministry_outreach_network/.dart_tool/chrome-device/Default/ServerCertificate-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Shortcuts
+ministry_outreach_network/.dart_tool/chrome-device/Default/Shortcuts-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Top Sites
+ministry_outreach_network/.dart_tool/chrome-device/Default/Top Sites-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/TransportSecurity
+ministry_outreach_network/.dart_tool/chrome-device/Default/Trust Tokens
+ministry_outreach_network/.dart_tool/chrome-device/Default/Trust Tokens-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Web Data
+ministry_outreach_network/.dart_tool/chrome-device/Default/Web Data-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/AutofillStrikeDatabase/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/AutofillStrikeDatabase/LOG
+.gitignore
+ministry_outreach_network/.dart_tool/chrome-device/Default/AutofillStrikeDatabase/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/BudgetDatabase/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/BudgetDatabase/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/BudgetDatabase/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/chrome_cart_db/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/chrome_cart_db/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/chrome_cart_db/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/ClientCertificates/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/ClientCertificates/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/ClientCertificates/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/commerce_subscription_db/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/commerce_subscription_db/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/commerce_subscription_db/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/discount_infos_db/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/discount_infos_db/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/discount_infos_db/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/discounts_db/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/discounts_db/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/discounts_db/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Download Service/EntryDB/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Download Service/EntryDB/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Download Service/EntryDB/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Rules/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Rules/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Rules/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Rules/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Scripts/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Scripts/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Scripts/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension Scripts/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension State/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension State/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension State/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension State/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Extension State/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Feature Engagement Tracker/AvailabilityDB/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Feature Engagement Tracker/AvailabilityDB/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Feature Engagement Tracker/AvailabilityDB/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Feature Engagement Tracker/EventDB/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Feature Engagement Tracker/EventDB/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Feature Engagement Tracker/EventDB/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/GCM Store/Encryption/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/GCM Store/Encryption/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/GCM Store/Encryption/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Local Storage/leveldb/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Local Storage/leveldb/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Local Storage/leveldb/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Local Storage/leveldb/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Local Storage/leveldb/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/optimization_guide_hint_cache_store/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/optimization_guide_hint_cache_store/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/optimization_guide_hint_cache_store/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/parcel_tracking_db/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/parcel_tracking_db/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/parcel_tracking_db/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/PersistentOriginTrials/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/PersistentOriginTrials/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SegmentInfoDB/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/PersistentOriginTrials/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SegmentInfoDB/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SegmentInfoDB/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SignalDB/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SignalDB/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SignalDB/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SignalStorageConfigDB/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SignalStorageConfigDB/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Segmentation Platform/SignalStorageConfigDB/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Service Worker/Database/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Service Worker/Database/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Service Worker/Database/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Service Worker/Database/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Service Worker/Database/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Session Storage/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Session Storage/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Session Storage/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Session Storage/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions/Session_13438289664541288
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions/Session_13438564175109371
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions/Tabs_13438290266331220
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions/Tabs_13438564177003996
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions_Encrypted/Session_13438289664578103
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions_Encrypted/Session_13438564175111050
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions_Encrypted/Tabs_13438290266333317
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sessions_Encrypted/Tabs_13438564177005360
+ministry_outreach_network/.dart_tool/chrome-device/Default/Shared Dictionary/db
+ministry_outreach_network/.dart_tool/chrome-device/Default/Shared Dictionary/db-journal
+ministry_outreach_network/.dart_tool/chrome-device/Default/Shared Dictionary/cache/index
+ministry_outreach_network/.dart_tool/chrome-device/Default/Shared Dictionary/cache/index-dir/the-real-index
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/metadata/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/metadata/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/metadata/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/shared_proto_db/metadata/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Site Characteristics Database/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Site Characteristics Database/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Site Characteristics Database/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Site Characteristics Database/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sync Data/LevelDB/CURRENT
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sync Data/LevelDB/LOCK
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sync Data/LevelDB/LOG.old
+ministry_outreach_network/.dart_tool/chrome-device/Default/Sync Data/LevelDB/MANIFEST-000001
+ministry_outreach_network/.dart_tool/chrome-device/Default/WebStorage/QuotaManager
+ministry_outreach_network/.dart_tool/chrome-device/Default/WebStorage/QuotaManager-journal
+ministry_outreach_network/.dart_tool/flutter_build/d792a47a3e2a4db48c5775821ff6fceb/.filecache
+ministry_outreach_network/.dart_tool/flutter_build/d792a47a3e2a4db48c5775821ff6fceb/app.dill
+ministry_outreach_network/.dart_tool/flutter_build/d792a47a3e2a4db48c5775821ff6fceb/debug_android_application.stamp
+ministry_outreach_network/.dart_tool/flutter_build/d792a47a3e2a4db48c5775821ff6fceb/flutter_assets.d
+ministry_outreach_network/.dart_tool/flutter_build/d792a47a3e2a4db48c5775821ff6fceb/link_hooks_result.json
+ministry_outreach_network/.dart_tool/flutter_build/d792a47a3e2a4db48c5775821ff6fceb/outputs.json
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/.lock
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/dependencies.dependencies_hash_file.json
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/hook.dependencies_hash_file.json
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/hook.dill
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/hook.dill.d
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/input.json
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/output.json
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/337ce265dc/stdout.txt
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/810465b43e/.lock
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/810465b43e/dependencies.dependencies_hash_file.json
+ministry_outreach_network/.dart_tool/hooks_runner/objective_c/810465b43e/output.json
+ministry_outreach_network/.dart_tool/hooks_runner/shared/objective_c/.lock
+ministry_outreach_network/.dart_tool/hooks_runner/shared/sqlite3/.lock
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/.lock
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/dependencies.dependencies_hash_file.json
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/hook.dependencies_hash_file.json
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/hook.dill
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/hook.dill.d
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/input.json
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/output.json
+ministry_outreach_network/.dart_tool/hooks_runner/sqlite3/337ce265dc/stdout.txt
+ministry_outreach_network/android/.gradle/9.3.1/executionHistory/executionHistory.bin
+ministry_outreach_network/android/.gradle/9.3.1/executionHistory/executionHistory.lock
+ministry_outreach_network/android/.gradle/9.3.1/fileHashes/fileHashes.bin
+ministry_outreach_network/android/.gradle/9.3.1/fileHashes/fileHashes.lock
+ministry_outreach_network/android/.gradle/buildOutputCleanup/buildOutputCleanup.lock
+ministry_outreach_network/android/.gradle/buildOutputCleanup/outputFiles.bin
