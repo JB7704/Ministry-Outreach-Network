@@ -137,6 +137,7 @@ class _HomeScreen extends State<HomeScreen> {
                   },
                   child: const Text('Filter by Criteria'),
                 ),
+                SizedBox(width: 10),
               ]
             ),
             
