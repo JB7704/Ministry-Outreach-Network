@@ -31,13 +31,15 @@ class FilterChipExample extends StatefulWidget {
   State<FilterChipExample> createState() => _FilterChipExampleState();
 }
 
+
+
 class _FilterChipExampleState extends State<FilterChipExample> {
   Set<MinistryFilter> filters = <MinistryFilter>{};
 
   @override
   Widget build(BuildContext context) {
     final TextTheme textTheme = Theme.of(context).textTheme;
-
+    double _currentValue = 0.0;
     return Center(
       child: Column(
         mainAxisAlignment: .center,
@@ -67,6 +69,10 @@ class _FilterChipExampleState extends State<FilterChipExample> {
             'Looking for: ${filters.map((MinistryFilter m) => m.name).join(', ')}',
             style: textTheme.labelLarge,
           ),
+          const SizedBox(height: 5.0),
+          Slider(value: _currentValue, min: 0.0, max: 315.0, divisions: 21, label: _currentValue.round().toString(), onChanged: (double newValue) { setState(() {
+            _currentValue = newValue;
+          });})
         ],
       ),
     );
