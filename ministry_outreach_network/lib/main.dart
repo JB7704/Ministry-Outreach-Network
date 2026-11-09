@@ -8,16 +8,8 @@ import 'package:ministry_outreach_network/screens/tag_screen.dart';
 
 
 void main() {
-  runApp(const MaterialApp(home: MyApp()));
-}
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  // This widget is the root of your application.
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
+  runApp(MaterialApp(
+    debugShowCheckedModeBanner: false,
       title: 'Ministry Outreach Network',
       theme: ThemeData(
         // This is the theme of your application.
@@ -49,6 +41,5 @@ class MyApp extends StatelessWidget {
         cardColor: const Color(0xFFCCCCCC),
       ),
       home: const HomeScreen(),
-    );
-  }
+  ));
 }

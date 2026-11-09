@@ -7,19 +7,17 @@ class TagScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.pop(context);
-            }
-          ),
-          title: const Text('FilterChip Sample'),
+    return Scaffold(
+      appBar: AppBar(
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.pop(context);
+          }
         ),
-        body: const FilterChipExample(),
+        title: const Text('FilterChip Sample'),
       ),
+      body: const FilterChipExample(),
     );
   }
 }
