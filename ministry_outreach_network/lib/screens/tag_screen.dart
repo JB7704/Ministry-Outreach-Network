@@ -69,11 +69,22 @@ class _FilterChipExampleState extends State<FilterChipExample> {
             'Looking for: ${filters.map((MinistryFilter m) => m.name).join(', ')}',
             style: textTheme.labelLarge,
           ),
-          const SizedBox(height: 5.0),
-          Slider(value: _currentValue, min: 0.0, max: 315.0, divisions: 21, label: _currentValue.round().toString(), onChanged: (double newValue) { setState(() {
-            _currentValue = newValue;
-          });})
+          Slider(value: _currentValue, min: 0.0, max: 315.0, divisions: 315, label: _currentValue.round().toString(), onChanged: (double newValue) {
+            setState(() {
+              _currentValue = newValue;
+              });
+            },
+            ),
+          ElevatedButton(
+            onPressed: () {
+              setState(() {
+                _currentValue = 0.0;
+              });
+            },
+            child: const Text("Set to Your Desired Distance"),
+          ),
         ],
+        /////////
       ),
     );
   }
