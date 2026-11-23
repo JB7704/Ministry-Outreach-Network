@@ -1,15 +1,25 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:ministry_outreach_network/dataconnect_generated/generated.dart';
+import 'package:ministry_outreach_network/firebase_options.dart';
 import 'package:ministry_outreach_network/screens/home_screen.dart';
 import 'package:ministry_outreach_network/screens/search_screen.dart';
 import 'package:ministry_outreach_network/screens/church_screen.dart';
 import 'package:ministry_outreach_network/screens/tag_screen.dart';
 
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+
+  var churches = await MinistryConnector.instance.getChurches().execute();
+  var churchArray = churches.data.churches;
+
+  runApp(
+    MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Ministry Outreach Network',
       theme: ThemeData(
         // This is the theme of your application.
@@ -40,6 +50,7 @@ void main() {
       ),
         cardColor: const Color(0xFFCCCCCC),
       ),
-      home: const HomeScreen(),
-  ));
+      home: HomeScreen(churchArray: churchArray),
+    )
+  );
 }

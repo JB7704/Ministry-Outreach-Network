@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:ministry_outreach_network/dataconnect_generated/generated.dart';
 import 'package:ministry_outreach_network/widgets/church_widget.dart';
 import 'package:ministry_outreach_network/screens/tag_screen.dart';
 import 'package:ministry_outreach_network/screens/search_screen.dart';
 import 'package:ministry_outreach_network/screens/church_screen.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  final List<GetChurchesChurches> churchArray;
+  const HomeScreen({super.key, required this.churchArray});
 
   // This widget is the home page of your application. It is stateful, meaning
   // that it has a State object (defined below) that contains fields that affect
@@ -70,7 +72,7 @@ class _HomeScreen extends State<HomeScreen> {
             Padding(
               padding: const EdgeInsets.symmetric(vertical: 8.0),
               child: Text(
-                'Number of Churches ${churches.length}', //ADD NUMBER OF CHURCHES RETURNED
+                'Number of Churches: fill in', //ADD NUMBER OF CHURCHES RETURNED
                 style: const TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.bold,
@@ -142,54 +144,24 @@ class _HomeScreen extends State<HomeScreen> {
             ),
             
             Expanded(
-              child: ListView(
-                children: <Widget>[
-                  Card(
+              child: ListView.builder(
+                itemCount: widget.churchArray.length,
+                itemBuilder: (context, index) {
+                  final church = widget.churchArray[index];
+                  return Card(
                     child: ListTile(
-                      title: Text('Example Church 1'),
+                      title: Text(church.name),
                       onTap: () {
                         Navigator.push(
                           context,
                           MaterialPageRoute<void>(
-                            builder: (BuildContext context) {
-                              return ChurchScreen();
-                            },
+                            builder: (context) => ChurchScreen(),
                           ),
                         );
                       },
                     ),
-                  ),
-                  Card(
-                    child: ListTile(
-                      title: Text('Example Church 2'),
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute<void>(
-                            builder: (BuildContext context) {
-                              return ChurchScreen();
-                            },
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                  Card(
-                    child: ListTile(
-                      title: Text('Example Church 3'),
-                      onTap: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute<void>(
-                            builder: (BuildContext context) {
-                              return ChurchScreen();
-                            },
-                          ),
-                        );
-                      },
-                    ),
-                  ),
-                ],
+                  );
+                },
               ),
             ),
           ],

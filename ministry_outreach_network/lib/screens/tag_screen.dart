@@ -36,6 +36,7 @@ class _FilterChipExampleState extends State<FilterChipExample> {
   Widget build(BuildContext context) {
     final TextTheme textTheme = Theme.of(context).textTheme;
 
+    double _currentValue = 0.0;
     return Center(
       child: Column(
         mainAxisAlignment: .center,
@@ -64,6 +65,20 @@ class _FilterChipExampleState extends State<FilterChipExample> {
           Text(
             'Looking for: ${filters.map((MinistryFilter m) => m.name).join(', ')}',
             style: textTheme.labelLarge,
+          ),
+          Slider(value: _currentValue, min: 0.0, max: 315.0, divisions: 315, label: _currentValue.round().toString(), onChanged: (double newValue) {
+            setState(() {
+              _currentValue = newValue;
+              });
+            },
+            ),
+          ElevatedButton(
+            onPressed: () {
+              setState(() {
+                _currentValue = 0.0;
+              });
+            },
+            child: const Text("Set to Your Desired Distance"),
           ),
         ],
       ),
